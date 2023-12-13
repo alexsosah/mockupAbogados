@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="desktop.css" />
+    <!--librería jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--libreria carrousel-->
+    <link rel="stylesheet" href="lib/carrousel/carrousel.css" />
+    <script src="lib/carrousel/carrousel.js"></script>
+    <!--libreria slide-->
+    <script src="lib/responsiveslides/responsiveslides.min.js"></script>
+    <!--fontawesome...-->
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--animaciones wow-->
+    <link rel="stylesheet" href="lib/wow.min.js/wow.min.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--libreria fancybox lightbox galeria-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="lib/wow.min.js/wow.min.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="mobile.css" />
+
+    <title>Abogades</title>
+  </head>
+  <body>
+    <!--Header 1 ⬆️-->
+    <header>
+      <div class="flexHorizontal headerContenido ancho">
+        <div class="flexHorizontal contacto">
+          <div class="contactoElemento flexHorizontal">
+            <i class="fa-solid fa-phone-flip"></i>
+            <p>999 927 36 52</p>
+          </div>
+          <div class="flexHorizontal contactoElemento">
+            <i class="fa-solid fa-envelope"></i>
+            <p>alex@sosa.com</p>
+          </div>
+          <div class="flexHorizontal contactoElemento">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>53E 309 Francisco de Montejo</p>
+          </div>
+        </div>
+        <div class="flexHorizontal iconosRedes">
+          <a href="https://www.linkedin.com">
+            <i
+              class="fa-brands fa-linkedin-in wow animate__animated animate__backInDown"
+            ></i>
+          </a>
+          <a href="https://www.x.com">
+            <i
+              class="fa-brands fa-x-twitter wow animate__animated animate__backInDown animate__slow"
+            ></i>
+          </a>
+          <a href="https://www.facebook.com">
+            <i
+              class="fa-brands fa-facebook-f wow animate__animated animate__backInDown animate__slower"
+            ></i>
+          </a>
+          <a href="https://www.instagram.com">
+            <i
+              class="fa-brands fa-instagram wow animate__animated animate__backInDown animate__slower"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--Menú sobrepuesto 😳😳😳-->
+    <div
+      class="segundoHeader ancho wow animate__animated animate__fadeIn animate__slower"
+    >
+      <figure class="logo flexHorizontal">
+        <img
+          src="https://ld-wp73.template-help.com/wordpress/prod_17879/v3/wp-content/uploads/2018/05/legator-logo.png"
+          alt=""
+        />
+        <i id="iconomenu" class="fa-solid fa-bars"></i>
+      </figure>
+      <ul id="menu" class="menuContenedor flexHorizontal">
+        <li class="link"><a href="#">HOME</a></li>
+        <li class="link"><a href="#carousel">SERVICES</a></li>
+        <li class="link"><a href="#famousCases">FAMOUS CASES</a></li>
+        <li class="link"><a href="#ourTeam">OUR TEAM</a></li>
+        <li class="link"><a href="#galeria">GALLERY</a></li>
+      </ul>
+      <script>
+        $("#iconomenu").click(function () {
+          $("#menu").slideToggle();
+        });
+        $("#titulo").click(function () {
+          $("#parrafo").slideToggle();
+        });
+      </script>
+    </div>
+    <script>
+      new WOW().init();
+    </script>
+    <!--Banner 1 💫 -->
+    <section class="bannerUno callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="images/slide1.jpg" alt="" />
+          <article class="bannerContenedor ancho">
+            <div class="vacio"></div>
+            <div class="textoBanner">
+              <h1 class="wow animate__animated animate__fadeIn">
+                Reputation. <br />
+                Respect. <i>Result.</i>
+              </h1>
+              <p>
+                We know what is to defend rights. We work with people for people
+                and with the full respect to the law. Contact for more details!
+              </p>
+              <a id="abrir1" class="btnGris" href="#">Contact Us!</a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <img src="images/slider2.webp" alt="" />
+          <article class="bannerContenedor ancho">
+            <div class="vacio"></div>
+            <div class="textoBanner">
+              <h1>
+                Reputation. <br />
+                Respect. <i>Result.</i>
+              </h1>
+              <p>
+                We know what is to defend rights. We work with people for people
+                and with the full respect to the law. Contact for more details!
+              </p>
+              <a id="abrir2" class="btnGris" href="#">Contact Us!</a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <img src="images/slide3.jpg" alt="" />
+          <article class="bannerContenedor ancho">
+            <div class="vacio"></div>
+            <div class="textoBanner">
+              <h1>
+                Reputation. <br />
+                Respect. <i>Result.</i>
+              </h1>
+              <p>
+                We know what is to defend rights. We work with people for people
+                and with the full respect to the law. Contact for more details!
+              </p>
+              <a id="abrir3" class="btnGris" href="#">Contact Us!</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <!--MODAL❇️❇️❇️-->
+      <section id="modal" class="fondo_modal">
+        <div class="contenido_modal">
+          <div class="icono">
+            <i id="cerrar" class="fa-solid fa-circle-xmark"></i>
+          </div>
+          <h1>Contact Us!</h1>
+          <input class="inputmodal" type="text" placeholder="Full name" />
+          <input class="inputmodal" type="text" placeholder="Email Address" />
+          <input class="inputmodal" type="text" placeholder="Message" />
+
+          <a class="btnGris" href="#">Submit</a>
+        </div>
+      </section>
+    </section>
+    <!--BANNER MOVIL 📱-->
+    <section class="hideMobile">
+      <div class="textoBanner">
+        <h1>
+          Reputation. <br />
+          Respect. <i>Result.</i>
+        </h1>
+        <p>
+          We know what is to defend rights. We work with people for people and
+          with the full respect to the law. Contact for more details!
+        </p>
+        <a id="abrir1" class="btnGris" href="#">Contact Us!</a>
+      </div>
+    </section>
+
+    <!--Carrousel 🎪-->
+    <section
+      id="carousel"
+      class="tarjetasBanner ancho wow animate__animated animate__fadeIn"
+    >
+      <div id="slide-container" class="tarjetaContenedor">
+        <article class="slide tarjetaBanner" data-slideindex="1">
+          <i class="fa-solid fa-briefcase"></i>
+          <h2>Business Law</h2>
+          <p>
+            Business requires strong legislative background to operate well.
+          </p>
+        </article>
+        <article class="slide tarjetaBanner" data-slideindex="2">
+          <i class="fa-solid fa-user"></i>
+          <h2>Civil Litigation</h2>
+          <p>
+            We advocate for our clients, seeking a fair resolution within a
+            reasonable timeframe.
+          </p>
+        </article>
+        <article class="slide tarjetaBanner" data-slideindex="3">
+          <i class="fa-solid fa-umbrella"></i>
+          <h2>Insurance Defense</h2>
+          <p>
+            Insurance issues require excellent knowledge and great intuition.
+          </p>
+        </article>
+        <article class="slide tarjetaBanner" data-slideindex="4">
+          <i class="fa-solid fa-gavel"></i>
+          <h2>Criminal Law</h2>
+          <p>
+            Defending your rights against criminal charges with expertise and
+            dedication.
+          </p>
+        </article>
+
+        <article class="slide tarjetaBanner" data-slideindex="5">
+          <i class="fa-solid fa-balance-scale"></i>
+          <h2>Family Law</h2>
+          <p>
+            Navigating family legal matters with compassion, ensuring fair
+            outcomes for all parties involved.
+          </p>
+        </article>
+      </div>
+      <div class="slide-buttons">
+        <div id="back-button" class="arrow back">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div id="forward-button" class="arrow forward">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+    <section id="famousCases" class="imaginarie ancho">
+      <div class="divisor"></div>
+    </section>
+
+    <!--Acordeón 🪗-->
+    <section class="horizontalSection ancho">
+      <div class="izqArticle">
+        <h1>Meet our most <i>famous</i> cases.</h1>
+        <i class="subtitulo">
+          Discover our standout cases! From courtroom dramas to epic legal
+          battles, our attorneys turn cases into legends!
+        </i>
+      </div>
+
+      <article class="acordeon">
+        <div class="tituloAcordeon wow animate__animated animate__fadeIn">
+          <h2>O.J. Simpson</h2>
+        </div>
+        <div class="contenidoAcordeon">
+          <p>
+            Meet the O.J. Dream Team, a bunch of legal maestros who juggled more
+            evidence than a circus performer. Our lawyers were like expert
+            chefs, mixing DNA samples and glove controversies with a dash of
+            Kardashian glamour. We convinced the jury that if the glove didn't
+            fit, they must acquit – because, you know, fashion faux pas are a
+            crime too.
+          </p>
+        </div>
+        <div class="tituloAcordeon wow animate__animated animate__fadeIn">
+          <h2>Michael Jackson</h2>
+        </div>
+        <div class="contenidoAcordeon">
+          <p>
+            Our legal ensemble moonwalked through the legal battlefield for the
+            King of Pop. We turned the courtroom into a stage, complete with a
+            dramatic performance of "Thriller." With a sprinkle of legal magic
+            and a pinch of pixie dust, we made the allegations disappear like
+            the moonwalk's smooth criminal. Who knew the law could be so
+            entertaining?
+          </p>
+        </div>
+        <div class="tituloAcordeon wow animate__animated animate__fadeIn">
+          <h2>Gloria Trevi</h2>
+        </div>
+        <div class="contenidoAcordeon">
+          <p>
+            When the Mexican Madonna, Gloria Trevi, faced legal turmoil, our
+            lawyers put on their sombreros and danced their way to victory.
+            Picture this: legal arguments choreographed like a salsa, alibis
+            spun like a mariachi ballad, and objections delivered with the
+            finesse of a flamenco. We convinced the judge that Trevi's talents
+            belonged on stage, not in a courtroom.
+          </p>
+        </div>
+      </article>
+      <script>
+        //acordeon 🪗
+        $(".tituloAcordeon").click(function () {
+          var t = $(this);
+          var tp = t.next(".contenidoAcordeon");
+
+          // Cierra todos los demás acordeones
+          $(".contenidoAcordeon").not(tp).animate(
+            {
+              width: "hide", // Oculta los demás acordeones
+              paddingLeft: "hide", // Opcional: ajusta el relleno también
+              paddingRight: "hide",
+            },
+            400
+          );
+
+          // Abre o cierra el acordeón actual
+          tp.animate(
+            {
+              width: "toggle", // Hace que el ancho se ajuste automáticamente
+              paddingLeft: "toggle", // Opcional: ajusta el relleno también
+              paddingRight: "toggle",
+            },
+            400
+          );
+        });
+      </script>
+    </section>
+    <section id="ourTeam" class="parallax">
+      <div class="contenedorTitulo">
+        <h1>Meet Our Team.</h1>
+        <p class="subtitulo">
+          <i
+            >We strive to make a difference and deliver excellence in every
+            endeavor.</i
+          >
+        </p>
+      </div>
+    </section>
+    <section class="contenedorCards ancho">
+      <article class="singleCard wow animate__animated animate__fadeIn">
+        <img src="images/card1.jpeg" alt="" />
+        <div class="figurita" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M-12.41,119.91 C149.99,150.00 354.97,23.20 510.72,135.70 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #3c3c3c"
+            ></path>
+          </svg>
+        </div>
+        <h2>Alejandro Sosa</h2>
+        <h3>SENIOR ATTORNEY</h3>
+        <div class="iconosRedes">
+          <a href="https://www.x.com">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </article>
+      <article
+        class="singleCard wow animate__animated animate__fadeIn animate__slow"
+      >
+        <img src="images/card2.jpeg" alt="" />
+        <div class="figurita" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M-12.41,119.91 C149.99,150.00 354.97,23.20 510.72,135.70 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #3c3c3c"
+            ></path>
+          </svg>
+        </div>
+        <h2>Aarón Chi</h2>
+        <h3>HOUSEKEEPING</h3>
+        <div class="iconosRedes">
+          <a href="https://www.x.com">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </article>
+      <article
+        class="singleCard wow animate__animated animate__fadeIn animate__slower"
+      >
+        <img src="images/card3.jpeg" alt="" />
+        <div class="figurita" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M-12.41,119.91 C149.99,150.00 354.97,23.20 510.72,135.70 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #3c3c3c"
+            ></path>
+          </svg>
+        </div>
+
+        <h2>Geovanny Ac</h2>
+        <h3>EVERYONE'S BESTIE</h3>
+        <div class="iconosRedes">
+          <a href="https://www.x.com">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <div id="galeria" class="imaginarie ancho">
+      <div class="divisor"></div>
+    </div>
+
+    <section class="horizontalSection margenAbajo ancho">
+      <article class="izqArticle">
+        <h1><i>Premier</i> Legal Spaces.</h1>
+        <p class="subtitulo">
+          Immerse yourself in an environment where professionalism meets
+          refinement, crafting a setting that embodies the essence of our legal
+          prowess and dedication to top-tier facilities.
+        </p>
+      </article>
+      <article class="galeria">
+        <div class="fancybox">
+          <a data-fancybox="gallery" data-src="images/galeria1.webp">
+            <figure>
+              <img class="fotos" src="images/galeria1.webp" alt="" />
+            </figure>
+          </a>
+          <a data-fancybox="gallery" data-src="images/galeria2.jpeg">
+            <figure>
+              <img class="fotos" src="images/galeria2.jpeg" alt="" />
+            </figure>
+          </a>
+          <a data-fancybox="gallery" data-src="images/galeria3.jpg">
+            <figure>
+              <img class="fotos" src="images/galeria3.jpg" alt="" />
+            </figure>
+          </a>
+          <a data-fancybox="gallery" data-src="images/galeria4.jpg">
+            <figure>
+              <img class="fotos" src="images/galeria4.jpg" alt="" />
+            </figure>
+          </a>
+        </div>
+        <script>
+          //Fancybox ✨
+          Fancybox.bind('[data-fancybox="gallery"]', {});
+        </script>
+      </article>
+    </section>
+
+    <div class="imaginarie ancho">
+      <div class="divisor"></div>
+    </div>
+    <section class="videoSection ancho">
+      <h1>As seen <i>on Tv.</i></h1>
+      <div class="contenedorVideo">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/occycDAXmAA"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <footer class="horizontalSection">
+      <article class="ancho">
+        <a href="#" id="scrollToTop" class="anclaSubir"
+          ><i class="fa-solid fa-chevron-up"></i
+        ></a>
+
+        <div class="tercioArticle">
+          <img src="images/footer-logo-1.webp" alt="" />
+          <p class="subtitulo">
+            Your reliable protection in jurisprudence. Our qualification
+            provides the opportunity solve the problems of any complexity.
+          </p>
+        </div>
+        <div class="tercioArticle">
+          <h2>Contact Info</h2>
+          <p class="subtitulo">
+            Calle 41 272 Mayapán <br />
+            97157 Mérida, Yucatán<br />
+            shocersosa@icloud.com <br />
+            9992 73 65 52 <br /><br /><br />
+            <b>Mon-Thu:</b> 9:30 – 21:00 <br />
+            <b>Fri:</b> 6:00 – 21:00 <br />
+            <b>Sat:</b> 10:00 – 15:00
+          </p>
+        </div>
+        <div class="tercioArticle">
+          <div class="iconosRedes">
+            <a href="https://www.linkedin.com">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.x.com">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+      <p class="footerTexto">© 2023 AlexSosa. All rights reserved.</p>
+    </footer>
+
+    <script>
+      //SCRIPT DE MODAL ❇️
+      var fondo = document.getElementById("modal");
+      $("#abrir1").click(function () {
+        fondo.style.display = "flex";
+      });
+      var fondo = document.getElementById("modal");
+      $("#abrir2").click(function () {
+        fondo.style.display = "flex";
+      });
+      var fondo = document.getElementById("modal");
+      $("#abrir3").click(function () {
+        fondo.style.display = "flex";
+      });
+      var fondo = document.getElementById("modal");
+      $("#cerrar").click(function () {
+        fondo.style.display = "none";
+      });
+
+      window.onclick = function (event) {
+        if (event.target == fondo) {
+          fondo.style.display = "none";
+        }
+      };
+
+      //SLIDES ✨
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+      //ancla
+      $(document).ready(function () {
+        // Muestra o oculta el ancla según el desplazamiento
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $("#scrollToTop").fadeIn();
+          } else {
+            $("#scrollToTop").fadeOut();
+          }
+        });
+
+        // Desplázate suavemente hacia arriba al hacer clic en el ancla
+        $("#scrollToTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+      //scroll menu
+      $(document).ready(function () {
+        // Scroll suave al hacer clic en un enlace del menú
+        $("#menu a").click(function () {
+          var targetSection = $($(this).attr("href"));
+          $("html, body").animate(
+            {
+              scrollTop: targetSection.offset().top,
+            },
+            600
+          );
+          return false; // Evita que se ejecute el comportamiento predeterminado del enlace
+        });
+      });
+
+      //ancla
+    </script>
+  </body>
+</html>

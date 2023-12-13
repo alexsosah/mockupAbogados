@@ -1,0 +1,7 @@
+página omg: https://ld-wp73.template-help.com/wordpress/prod_17879/v3/
+
+banner: https://ld-wp73.template-help.com/wordpress/prod_17879/v3/wp-content/uploads/2018/05/legalor_1.jpg
+
+banner 2: https://ld-wp73.template-help.com/wordpress/prod_17879/v3/wp-content/uploads/2018/05/legalor-bg1.jpg
+
+banner 3: https://ld-wp73.template-help.com/wordpress/prod_17879/v3/wp-content/uploads/2018/05/legalor-bg2.jpg
