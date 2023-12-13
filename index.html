@@ -174,11 +174,26 @@
             <i id="cerrar" class="fa-solid fa-circle-xmark"></i>
           </div>
           <h1>Contact Us!</h1>
-          <input class="inputmodal" type="text" placeholder="Full name" />
-          <input class="inputmodal" type="text" placeholder="Email Address" />
-          <input class="inputmodal" type="text" placeholder="Message" />
+          <input
+            id="campo"
+            class="inputmodal"
+            type="text"
+            placeholder="Full name"
+          />
+          <input
+            id="campo"
+            class="inputmodal"
+            type="text"
+            placeholder="Email Address"
+          />
+          <input
+            id="campo"
+            class="inputmodal"
+            type="text"
+            placeholder="Message"
+          />
 
-          <a class="btnGris" href="#">Submit</a>
+          <a id="btnEnviar" class="btnGris" href="#">Submit</a>
         </div>
       </section>
     </section>
@@ -613,8 +628,15 @@
           return false; // Evita que se ejecute el comportamiento predeterminado del enlace
         });
       });
-
-      //ancla
+//validar campos
+      $(document).ready(function () {
+        $("#btnEnviar").click(function () {
+          if ($("#campo").val().length < 1) {
+            alert("El nombre es obligatorio");
+            return false;
+          }
+        });
+      });
     </script>
   </body>
 </html>
